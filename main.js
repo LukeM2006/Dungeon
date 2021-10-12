@@ -18,11 +18,7 @@ class Main extends Phaser.Scene {
         this.load.image('go', './assets/img/DCgameover.png')
         this.load.spritesheet('pl', './assets/img/DCGoodGuy.png', { frameWidth: 17, frameHeight: 30 })
         this.load.spritesheet('por', './assets/img/DCportal.png', { frameWidth: 35, frameHeight: 1 })
-        this.load.audio('pickup', '../game/assets/snd/coinsound.wav')
-        this.load.audio('music', '../game/assets/snd/backsound.wav')
-        this.load.audio('gos', '../game/assets/snd/game-over.wav')
-        this.load.audio('jump', '../game/assets/snd/jump.wav')
-        this.load.audio('hit', '../game/assets/snd/collide.wav')
+
 
     }
 
