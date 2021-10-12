@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>My Phaser Game</title>
+  </head>
+  <body>
+    <main>
+	    <script type="'text/javascript'">
+	    	(function() {
+    try {
+        var $_console$$ = console;
+        Object.defineProperty(window, "console", {
+            get: function() {
+                if ($_console$$._commandLineAPI)
+                    throw "STOP HACKING";
+                return $_console$$
+            },
+            set: function($val$$) {
+                $_console$$ = $val$$
+            }
+        })
+    } catch ($ignore$$) {
+    }
+})();
+	    </script>
+      <script src="../phaser.min.js"></script>
+      <script src="main.js"></script>
+      <script type="'text/javascript'">
+	/*
+	(function(){
+ 	
+  	let con = console;
+  	Object.defineProperty( window, "console", {
+	  get : function(){
+	    if( con._commandLineAPI ){
+	    throw "Sorry, Can't execute scripts!";
+	  }
+	  return con; 
+	  },
+	  set : function(val){
+            con = val;
+	  }
+	});
+	 
+	})();
+	*/
+      </script>	
+    </main>
+  </body>
+</html>
